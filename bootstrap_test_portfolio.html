@@ -9,166 +9,167 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<style>
 
-.navbar{
- background:rgba(255,255,255,0.6);
- -webkit-backdrop-filter: blur(20px);
-   backdrop-filter: blur(20px); 
-}
-
-</style>
-
-    
+  <style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+  </style>
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<body>
-
-   <!-- Fixed navbar -->
-   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Project name</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
             </ul>
           </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="../navbar/">Default</a></li>
-          <li><a href="../navbar-static-top/">Static top</a></li>
-          <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
+      </div>
     </div>
-  </nav>
+  </div>
+</nav>    
 
+<div id="section1" class="container-fluid">
+  <h1>Section 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 
-
-
-
-    <div class="jumbotron text-center">
-        <h1>Michał Szumnarski - TEST PORTFOLIO</h1>
-        <p>Resize this responsive page to see the effect!</p>
+  <div class="row">
+    <div class="col-sm-4">
+        <h3>Column 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Column 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="Zrzut ekranu (2).png">
-                        <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
-                        <div class="caption">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="michal_photo2.jpg">
-                        <img src="michal_photo2.jpg" alt="Nature" class="img-thumbnail img-circle img-responsive">
-                        <div class="caption">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/w3images/fjords.jpg">
-                        <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
-                        <div class="caption">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="Zrzut ekranu (2).png">
-                        <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
-                        <div class="caption">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/w3images/nature.jpg">
-                        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-                        <div class="caption">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="/w3images/fjords.jpg">
-                        <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
-                        <div class="caption">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-
-
+    <div class="col-sm-4">
+        <h3>Column 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
+    <div class="col-sm-4">
+        <h3>Column 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+</div>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section2" class="container">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+
+  <div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="Zrzut ekranu (2).png">
+                <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="michal_photo2.jpg">
+                <img src="michal_photo2.jpg" alt="Nature" class="img-thumbnail img-circle img-responsive">
+                <div class="caption">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="/w3images/fjords.jpg">
+                <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+                <div class="caption">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  
+
+  <div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="Zrzut ekranu (2).png">
+                <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
+                <div class="caption">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="/w3images/nature.jpg">
+                <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="/w3images/fjords.jpg">
+                <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+                <div class="caption">
+                    <p>Lorem ipsum...</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<div id="section41" class="jumbotron text-center">
+    <h1>Michał Szumnarski - TEST PORTFOLIO</h1>
+    <p>Resize this responsive page to see the effect!</p>
+</div>
+
+
+<div id="section42" class="container-fluid">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
 
 </body>
-
 </html>
