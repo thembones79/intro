@@ -6,170 +6,275 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://mdbootstrap.com/previews/docs/latest/css/mdb.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-  <style>
-  body {
-      position: relative; 
-  }
-  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
-  </style>
+    <style>
+        body {
+            position: relative;
+        }
+
+        .navbar {
+            background: linear-gradient(to top, #12121285 20%, rgb(59, 59, 59) 80%);
+            border-bottom-color: gray;
+            border-bottom-width: 0;
+        }
+
+        .navbar-inverse .navbar-nav>.active>a,
+        .navbar-inverse .navbar-nav>.active>a:hover,
+        .navbar-inverse .navbar-nav>.active>a:focus {
+
+            background-color: #0000006c;
+        }
+
+        #section1 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background: linear-gradient(45deg, #1E88E5 20%, #673ab7 80%);
+        }
+
+        #section2 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background: linear-gradient(45deg, #fbac7f, #e5658a);
+        }
+
+        #section3 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background: linear-gradient(45deg, #d96be4, #0fadb1);
+        }
+
+        #section41 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background: linear-gradient(to top right, rgba(255, 82, 99, 0.9) 10%, rgba(255, 115, 129, 0.9) 65%, rgba(252, 189, 1, 0.9) 125%);
+        }
+
+        #section42 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background: linear-gradient(45deg, #404c8c, #0f7699);
+        }
+    </style>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#section1">Section 1</a></li>
-          <li><a href="#section2">Section 2</a></li>
-          <li><a href="#section3">Section 3</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#section41">Section 4-1</a></li>
-              <li><a href="#section42">Section 4-2</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>    
-
-<div id="section1" class="container-fluid">
-  <h1>Section 1</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-
-  <div class="row">
-    <div class="col-sm-4">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-        <h3>Column 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-</div>
-
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section2" class="container">
-  <h1>Section 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-
-
-  <div class="row">
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <a href="Zrzut ekranu (2).png">
-                <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
-                <div class="caption">
-                    <p>Lorem ipsum...</p>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#section1">Section 1</a>
+                        </li>
+                        <li>
+                            <a href="#section2">Section 2</a>
+                        </li>
+                        <li>
+                            <a href="#section3">Section 3</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#section41">Section 4-1</a>
+                                </li>
+                                <li>
+                                    <a href="#section42">Section 4-2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="view jarallax" data-jarallax="{&quot;speed&quot;: 0.2}" style="background-image: none; z-index: 0; background-attachment: scroll; background-size: 200%;"
+        data-jarallax-original-styles="background-image: url(http://atgbcentral.com/data/out/103/4839354-wallpaper-black-and-white.jpg);">
+        <div class="full-bg-img rgba-pink-slight">
+
+
+    <div id="section1" class="container-fluid">
+        <div class="container">
+            <h1>Section 1</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="section2" class="container-fluid">
+        <div class="container">
+            <h1>Section 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="Zrzut ekranu (2).png">
+                            <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="michal_photo2.jpg">
+                            <img src="michal_photo2.jpg" alt="Nature" class="img-thumbnail img-circle img-responsive">
+                            <div class="caption">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <a href="michal_photo2.jpg">
-                <img src="michal_photo2.jpg" alt="Nature" class="img-thumbnail img-circle img-responsive">
-                <div class="caption">
-                    <p>Lorem ipsum...</p>
+    <div id="section3" class="container-fluid">
+        <div class="container">
+            <h1>Section 3</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="Zrzut ekranu (2).png">
+                            <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </a>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="/w3images/nature.jpg">
+                            <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="/w3images/fjords.jpg">
+                            <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <a href="/w3images/fjords.jpg">
-                <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
-                <div class="caption">
-                    <p>Lorem ipsum...</p>
-                </div>
-            </a>
+
+
+
+    <div id="section41" class="container-fluid">
+        <div class="container">
+            <h1>Michał Szumnarski - TEST PORTFOLIO</h1>
+            <p>Resize this responsive page to see the effect!</p>
         </div>
     </div>
-</div>
+
+
+ 
 
 
 
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section3" class="container-fluid">
-  <h1>Section 3</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  
 
-  <div class="row">
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <a href="Zrzut ekranu (2).png">
-                <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
-                <div class="caption">
-                    <p>Lorem ipsum...</p>
-                </div>
-            </a>
+
+    <div id="section41" class="container-fluid">
+        <div class="container">
+            <h1>Michał Szumnarski - TEST PORTFOLIO</h1>
+            <p>Resize this responsive page to see the effect!</p>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <a href="/w3images/nature.jpg">
-                <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-                <div class="caption">
-                    <p>Lorem ipsum...</p>
-                </div>
-            </a>
+
+    <div id="section42" class="container-fluid">
+        <div class="container">
+            <h1>Section 4 Submenu 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+                at the navigation bar while scrolling!</p>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-            <a href="/w3images/fjords.jpg">
-                <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
-                <div class="caption">
-                    <p>Lorem ipsum...</p>
-                </div>
-            </a>
-        </div>
-    </div>
+
+
+               
+</div>
+<div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -100;">
+    <div style="background-position: 50% 50%; background-size: 100%; background-repeat: no-repeat; background-image: url(&quot;https://mdbootstrap.com/img/Photos/Others/food2.jpg&quot;); position: fixed; top: 0px; left: 0px; width: 1645.08px; height: 860.8px; overflow: hidden; pointer-events: none; margin-left: -201.042px; margin-top: 20.1px; visibility: visible; transform: translateY(-19.9px) translateZ(0px);"></div>
+</div>
 </div>
 
 
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-
-<div id="section41" class="jumbotron text-center">
-    <h1>Michał Szumnarski - TEST PORTFOLIO</h1>
-    <p>Resize this responsive page to see the effect!</p>
-</div>
-
-
-<div id="section42" class="container-fluid">
-  <h1>Section 4 Submenu 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
 
 </body>
+
 </html>
