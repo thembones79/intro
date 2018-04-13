@@ -11,11 +11,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Amatic+SC|Architects+Daughter|Baloo|Baloo+Bhaina|Baloo+Da|Baloo+Tammudu|Barlow+Condensed|Bungee+Hairline|Calligraffitti|Carrois+Gothic+SC|Chau+Philomene+One|Chela+One|Codystar|Coiny|Comfortaa:300,400,700|Didact+Gothic|Emblema+One|Erica+One|Galada|Give+You+Glory|Gruppo|Indie+Flower|Laila|Lobster|Love+Ya+Like+A+Sister|Loved+by+the+King|Lustria|Maiden+Orange|Marcellus|Marcellus+SC|Maven+Pro|Megrim|Monofett|Montserrat+Subrayada|Mouse+Memoirs|Nova+Flat|Oleo+Script|Oranienbaum|Passion+One|Pattaya|Petit+Formal+Script|Play|Poiret+One|Pragati+Narrow|Racing+Sans+One|Rajdhani|Righteous|Saira+Condensed|Shadows+Into+Light|Shadows+Into+Light+Two|Sonsie+One|Swanky+and+Moo+Moo|Teko|Trirong|Trochut|Varela|Voltaire|Waiting+for+the+Sunrise|Zilla+Slab+Highlight" rel="stylesheet">
+
+
 
     <style>
         body {
             position: relative;
+            font-family: Barlow Condensed,sans-serif;
         }
+
+        h1, h2, h3, h4, h5, h6 {
+
+           font-family: 'Poiret One', cursive; 
+        }
+
+
+        p {
+    margin: 30px 0 40px;
+}        
 
         .navbar {
             background: linear-gradient(to top, #12121285 20%, rgb(59, 59, 59) 80%);
@@ -30,9 +44,18 @@
             background-color: #0000006c;
         }
 
+.navbar-brand {
+
+    font-family: 'Codystar', cursive;
+    font-size: 26px;
+}
+
+
+
+
         #section1 {
             padding-top: 50px;
-            height: 500px;
+            height: 600px;
             color: #fff;
             background: linear-gradient(45deg, #1E88E5 20%, #673ab7 80%);
         }
@@ -78,19 +101,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                <a class="navbar-brand" href="#">Michał Szumnarski</a>
             </div>
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#section1">Section 1</a>
+                            <a href="#section1">ABOUT</a>
                         </li>
                         <li>
-                            <a href="#section2">Section 2</a>
+                            <a href="#section2">PORTFOLIO</a>
                         </li>
                         <li>
-                            <a href="#section3">Section 3</a>
+                            <a href="#section3">CONTACT</a>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4
@@ -117,26 +140,24 @@
 
 
     <div id="section1" class="container-fluid">
-        <div class="container">
-            <h1>Section 1</h1>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
-                at the navigation bar while scrolling!</p>
+        <div class="container text-center">
+            <h1>About</h1>
+            <p>Currently – Marketing Manager at Unisystem Co. Creator of Riverdi & uxTouch brand. Hoping that someday become BackEnd Developer.</p>
 
             <div class="row">
                 <div class="col-sm-4">
-                    <h3>Column 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                  
+                </div>
+                <div class="col-md-4">
+                    <div >
+                        <a href="michal_photo2.jpg">
+                            <img src="michal_photo2.jpg" alt="Nature" class=" img-circle img-responsive">
+                          
+                        </a>
+                    </div>
                 </div>
                 <div class="col-sm-4">
-                    <h3>Column 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Column 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                
                 </div>
             </div>
         </div>
@@ -144,7 +165,7 @@
     </div>
     <div id="section2" class="container-fluid">
         <div class="container">
-            <h1>Section 2</h1>
+            <h1>Portfolio</h1>
             <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
                 at the navigation bar while scrolling!</p>
 
@@ -188,7 +209,7 @@
     </div>
     <div id="section3" class="container-fluid">
         <div class="container">
-            <h1>Section 3</h1>
+            <h1>Contact me</h1>
             <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
                 at the navigation bar while scrolling!</p>
 
