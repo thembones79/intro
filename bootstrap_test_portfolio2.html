@@ -11,21 +11,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Amatic+SC|Architects+Daughter|Baloo|Baloo+Bhaina|Baloo+Da|Baloo+Tammudu|Barlow+Condensed|Bungee+Hairline|Calligraffitti|Carrois+Gothic+SC|Chau+Philomene+One|Chela+One|Codystar|Coiny|Comfortaa:300,400,700|Didact+Gothic|Emblema+One|Erica+One|Galada|Give+You+Glory|Gruppo|Indie+Flower|Laila|Lobster|Love+Ya+Like+A+Sister|Loved+by+the+King|Lustria|Maiden+Orange|Marcellus|Marcellus+SC|Maven+Pro|Megrim|Monofett|Montserrat+Subrayada|Mouse+Memoirs|Nova+Flat|Oleo+Script|Oranienbaum|Passion+One|Pattaya|Petit+Formal+Script|Play|Poiret+One|Pragati+Narrow|Racing+Sans+One|Rajdhani|Righteous|Saira+Condensed|Shadows+Into+Light|Shadows+Into+Light+Two|Sonsie+One|Swanky+and+Moo+Moo|Teko|Trirong|Trochut|Varela|Voltaire|Waiting+for+the+Sunrise|Zilla+Slab+Highlight"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Barlow+Condensed" rel="stylesheet">
 
 
-<script>
+    <script>
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
 
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-     }, 500);
-});
-
-</script>
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    </script>
 
 
 
@@ -124,14 +121,9 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
         }
 
-        #section41 {
-            padding-top: 50px;
-            height: 100%;
-            color: #fff;
-            background: linear-gradient(to top right, rgba(255, 82, 99, 0.9) 10%, rgba(255, 115, 129, 0.9) 65%, rgba(252, 189, 1, 0.9) 125%);
-        }
 
-        #section42 {
+
+        #section4 {
             padding-top: 50px;
             height: 100%;
             color: #fff;
@@ -243,7 +235,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50"  >
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -253,7 +245,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Michał Szumnarski</a>
+                <a class="navbar-brand" href="#section1">Michał Szumnarski</a>
             </div>
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -291,8 +283,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
                 </div>
                 <div class="col-md-4">
                     <div>
-                        <a href="michal_photo2.jpg">
-                            <img src="michal_photo2.jpg" alt="Nature" class=" img-circle img-responsive">
+                        <a href="http://image.ibb.co/cEWeE7/michal_photo2.jpg">
+                            <img src="http://image.ibb.co/cEWeE7/michal_photo2.jpg" alt="Szumnarski" class=" img-circle img-responsive">
 
                         </a>
                     </div>
@@ -314,30 +306,30 @@ $(document).on('click', 'a[href^="#"]', function (event) {
             <div class="row">
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="unisystem-main.png">
-                            <img src="unisystem-main.png" alt="Lights" style="width:100%">
+                        <a href="https://www.unisystem-displays.com/en/" target="_blank">
+                            <img src="https://image.ibb.co/kJz2j7/unisystem_main.png" alt="Home page" style="width:100%">
                             <div class="caption">
-                                Lorem ipsum...
+                                Home page
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="unisystem-shop.png">
-                            <img src="unisystem-shop.png" alt="Lights" style="width:100%">
+                        <a href="https://www.unisystem-displays.com/en/products.html" target="_blank">
+                            <img src="https://image.ibb.co/ja9eWn/unisystem_shop.png" alt="Product category page" style="width:100%">
                             <div class="caption">
-                                Lorem ipsum...
+                                Product category page
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="unisystem-product.png">
-                            <img src="unisystem-product.png" alt="Lights" style="width:100%">
+                        <a href="https://www.unisystem-displays.com/en/products/lcd-tft/standard/rvt70aqffwn00.html" target="_blank">
+                            <img src="https://image.ibb.co/iC4wBn/unisystem_product.png" alt="Product page" style="width:100%">
                             <div class="caption">
-                                Lorem ipsum...
+                                Product page
                             </div>
                         </a>
                     </div>
@@ -350,30 +342,30 @@ $(document).on('click', 'a[href^="#"]', function (event) {
             <div class="row">
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="riverdi-main.png">
-                            <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
+                        <a href="https://riverdi.com/" target="_blank">
+                            <img src="https://image.ibb.co/h5bF47/riverdi_main.png" alt="Home page" style="width:100%">
                             <div class="caption">
-                                Lorem ipsum...
+                                Home page
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="riverdi-discover.png">
-                            <img src="Zrzut ekranu (2).png" alt="Lights" style="width:100%">
-                            <div class="riverdi-discover">
-                                Lorem ipsum...
+                        <a href="https://riverdi.com/discover-our-products/" target="_blank">
+                            <img src="https://image.ibb.co/nAJv47/riverdi_discover.png" alt="Discover our products" style="width:100%">
+                            <div class="caption">
+                                Discover our products
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <a href="riverdi-uxtouch.png">
-                            <img src="riverdi-uxtouch.png" alt="Lights" style="width:100%">
+                        <a href="https://riverdi.com/uxtouch/" target="_blank">
+                            <img src="https://image.ibb.co/fDBXj7/riverdi_uxtouch.png" alt="uxTouch page" style="width:100%">
                             <div class="caption">
-                                Lorem ipsum...
+                                uxTouch page
                             </div>
                         </a>
                     </div>
@@ -442,9 +434,10 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         </div>
     </div>
 
-    <div id="section42" class="container-fluid">
+    <div id="section4" class="container-fluid">
         <div class="container text-center">
-            <p class="footer">Michał Szumnarski <i class="fa fa-copyright fa-6 fa-flip-horizontal" aria-hidden="true"></i> (copyleft) 2018. All Rights Reversed ;)</p>
+            <p class="footer">Michał Szumnarski
+                <i class="fa fa-copyright fa-6 fa-flip-horizontal" aria-hidden="true"></i> (copyleft) 2018. All Rights Reversed ;)</p>
         </div>
     </div>
 
